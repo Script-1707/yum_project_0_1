@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:yum_project_0_1/app/view/Login.dart';
+
 
 class Pagina_Inicial extends StatefulWidget {
   @override
@@ -40,9 +42,9 @@ class _Pagina_InicialState extends State<Pagina_Inicial> {
                         padding: const EdgeInsets.all(16.0),
                         textStyle: const TextStyle(fontSize: 19),
                       ),
-                      onPressed: () {},
-                      child: const Text('INICIAR'),
-                      
+                      onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => Login()), );},
+                      child: const Text('INICIAR',),
+
 
                     ),
                     Icon(
